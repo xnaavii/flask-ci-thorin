@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <title>Hello</title>
   </head>
   <body>
@@ -53,6 +54,7 @@
     <!-- Main Content -->
     <div class="container">
       {% block content %}
+
       {% endblock %}
     </div>
 
@@ -87,7 +89,9 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website <span id="copyright"></span></p>
+            <p class="copyright text-muted">
+              Copyright &copy; Your Website <span id="copyright"></span>
+            </p>
           </div>
         </div>
       </div>
@@ -102,7 +106,7 @@
 
     <!-- Custom jquery js -->
     <script>
-      $("#copyright").text(new Date().getFullYear());
+      $('#copyright').text(new Date().getFullYear())
     </script>
   </body>
 </html>
