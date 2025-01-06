@@ -1,3 +1,16 @@
 col-md-5 img {
     width: 100%;
 }
+
+.company-img {
+    border-radius: 61% 46% 37% 24%;
+    box-shadow: 3px 3px 5px 0px #53595f;
+    transition: 0.2s ease-in-out;
+}
+
+.company-img:hover{
+    border-radius: 0;
+    z-index: 99;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 0px 5px #674543;
+}
